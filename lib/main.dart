@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:expense_tracker/expense_tracker.dart';
+import 'package:expense_tracker/widgets/expense_tracker.dart';
 
 
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: Expenses(),
+     MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        useMaterial3: true
+      ),
+      home:  Expenses(),
     ),
   );
 }
